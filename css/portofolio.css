@@ -1,0 +1,282 @@
+body
+{
+	font-family: "Times New Roman";
+}
+/*---------------------------------------------- LOGO -----------------------------------------------*/
+#logo
+{
+	width: 210px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo img
+{
+	width: 100%;
+	max-width: 190px;
+	min-width: 130px;
+	margin-top: 10px;
+}
+/*---------------------------------------------- MENU -----------------------------------------------*/
+#menu
+{
+	width: 100%;
+	position: relative;
+}
+#nav-item
+{
+	color: #303030;
+	font-size: 18px;
+	padding-left:  16px;
+	padding-right: 16px;
+	margin-top: -8px;
+}
+/*---------------------------------------------- TITLE -----------------------------------------------*/
+.page-title
+{
+  text-align: center;
+  color: #303030;
+}
+
+/*---------------------------------------------- PHOTO -----------------------------------------------*/
+.line-1
+{
+  margin-top: 3%;
+  height: 220px;
+}
+.line-2
+{
+  margin-top: 3%;
+  height: 220px;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*---------------------------------------------- first photo*/
+.first-photo
+{
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.first-photo .photo
+{
+  position: relative;
+  width: 70%;
+  float: right;
+  height: 100%;
+}
+.first-photo .photo img
+{
+  height: 100%;
+  width: 100%;
+}
+.first-photo .photo .overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.line-1 .first-photo .photo .overlay
+{
+  background-color: #DB7093;
+}
+.line-2 .first-photo .photo .overlay
+{
+  background-color:   #303030;
+}
+.first-photo .photo:hover .overlay 
+{
+  opacity: 1;
+}
+/*---------------------------------------------- second photo*/
+.second-photo
+{
+  float: left;
+  width: 34%;
+  height: 100%;
+}
+.second-photo .photo
+{
+  position: relative;
+  width: 70%;
+  float: right;
+  margin-right: 15%;
+  height: 100%;
+}
+.second-photo .photo img
+{
+  height: 100%;
+  width: 100%;
+}
+.second-photo .photo .overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.line-1 .second-photo .photo .overlay 
+{
+  background-color: #5F9EA0;
+}
+.line-2 .second-photo .photo .overlay
+{
+  background-color: #228B22;
+}
+.second-photo .photo:hover .overlay 
+{
+  opacity: 1;
+}
+/*---------------------------------------------- third photo*/
+.third-photo
+{
+  float: right;
+  width: 33%;
+  height: 100%;
+}
+.third-photo .photo
+{
+  position: relative;
+  width: 70%;
+  float: left;
+  height: 100%;
+}
+.third-photo .photo img
+{
+  height: 100%;
+  width: 100%;
+}
+.third-photo .photo .overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.line-1 .third-photo .photo .overlay
+{
+  background-color: #4682B4;
+}
+.line-2 .third-photo .photo .overlay
+{
+  background-color: #FFA07A;
+}
+.third-photo .photo:hover .overlay 
+{
+  opacity: 1;
+}
+/*---------------------------------------------- FOOTER -----------------------------------------------*/
+footer
+{
+	background-color: #303030;
+	height: 250px;
+  	position: relative;
+  	margin-bottom: -10%;
+}
+.footer-logo
+{
+	width: 145px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-logo img
+{
+	width: 100%;
+	max-width: 140px;
+	min-width: 120px;
+  margin-top: 3%;
+}
+.footer-menu
+{
+	margin-left: 32%;
+}
+.footer-menu a
+{
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.social-icons 
+{
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-icons img
+{
+   margin-left: 10%;
+}
+.copyright
+{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*------------------------------------------------ RESPONSIVE -------------------------------------------------*/
+/*tablet*/
+@media screen and (max-width: 1000px)
+{
+	.footer-menu
+	{
+		margin-left: 24%;
+	}
+  .line-1, .line-2
+  {
+    height: 180px;
+  }
+  .first-photo .photo, .second-photo .photo, .third-photo .photo
+  {
+    width: 80%;
+  }
+  .line-2
+  {
+    margin-bottom: 15%;
+  }
+	
+}
+/*mobile*/
+@media screen and (max-width: 500px)
+{
+	.footer-menu
+	{
+		margin-left: 20%;
+	}
+	footer
+	{
+		height: 300px;
+	}
+  .line-1, .line-2
+  {
+    height: 100px;
+    margin-top: 10%;
+  }
+	
+}

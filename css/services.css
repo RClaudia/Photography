@@ -1,0 +1,282 @@
+body
+{
+	font-family: "Times New Roman";
+}
+/*---------------------------------------------- LOGO -----------------------------------------------*/
+#logo
+{
+	width: 210px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo img
+{
+	width: 100%;
+	max-width: 190px;
+	min-width: 130px;
+	margin-top: 10px;
+}
+/*---------------------------------------------- MENU -----------------------------------------------*/
+#menu
+{
+	width: 100%;
+	position: relative;
+}
+#nav-item
+{
+	color: #303030;
+	font-size: 18px;
+	padding-left:  16px;
+	padding-right: 16px;
+	margin-top: -8px;
+}
+/*---------------------------------------------- TITLE -----------------------------------------------*/
+.page-title
+{
+  text-align: center;
+  color: #303030;
+}
+/*---------------------------------------------- PACHET 1, 3, 5 -----------------------------------------------*/
+.pachet-1, .pachet-3, .pachet-5
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 350px;
+  margin-bottom: 7%;
+}
+.title
+{
+	margin-top: 5%;
+	margin-bottom: 9%;
+}
+.pachet-3 .title
+{
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+.pachet-1 img, .pachet-3 img, .pachet-5 img
+{
+  height: 100%;
+  position: relative;
+  display: inline;
+}
+.pachet-1 .block, .pachet-3 .block, .pachet-5 .block
+{
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  margin-left: -10%;
+  margin-top: 3%;
+  display: inline;
+}
+.pachet-1 .block
+{
+  background-color: #303030;
+  color: white;
+}
+.pachet-3 .block
+{
+  background-color: #526c2c;
+  color: white;
+}
+.pachet-5 .block
+{
+  background-color: #DB7093;
+  color: white;
+  height: 30%;
+  margin-top: 5%;
+}
+/*---------------------------------------------- PACHET 2, 4 -----------------------------------------------*/
+.pachet-2, .pachet-4
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 350px;
+  margin-bottom: 7%;
+}
+.title
+{
+	margin-top: 4%;
+	margin-bottom: 9%;
+}
+.pachet-2 img, .pachet-4 img
+{
+  height: 100%;
+  position: relative;
+  display: inline;
+  float: right;
+}
+.pachet-2 .block, .pachet-4 .block
+{
+  background-color: green;
+  position: absolute;
+  width: 35%;
+  height: 35%;  
+  margin-top: 3%;
+  margin-left: 15%;
+  display: inline;
+}
+.pachet-2 .block
+{
+  background-color: #db8f86;
+  color: white;
+}
+.pachet-4 .block
+{
+  margin-top: 5%;
+  background-color: #4682B4;
+  color: white;
+  height: 30%;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+.list
+{
+   margin-left: 10%;
+   font-size: 20px;
+   margin-top: -15px;
+}
+.cod-pachet
+{
+  text-align: right;
+  margin-right: 10%;
+  font-size: 25px;
+}
+h1
+{
+  text-align: center;
+}
+
+/*---------------------------------------------- FOOTER -----------------------------------------------*/
+footer
+{
+	background-color: #303030;
+	height: 250px;
+  	position: relative;
+  	margin-bottom: -10%;
+}
+.footer-logo
+{
+	width: 145px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-logo img
+{
+	width: 100%;
+	max-width: 140px;
+	min-width: 120px;
+  margin-top: 3%;
+}
+.footer-menu
+{
+	margin-left: 32%;
+}
+.footer-menu a
+{
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.social-icons 
+{
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-icons img
+{
+   margin-left: 10%;
+}
+.copyright
+{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*------------------------------------------------ RESPONSIVE -------------------------------------------------*/
+/*tablet*/
+@media screen and (max-width: 1000px)
+{
+	.footer-menu
+	{
+		margin-left: 24%;
+	}
+	.pachet-1, .pachet-3, .pachet-5, .pachet-2, .pachet-4
+	{
+  		width: 75%;
+  		height: 250px;
+  		margin-bottom: 15%;
+	}
+	.title
+	{
+		font-size: 32px;
+		margin-top: 5%;
+	}
+	.list
+	{
+		font-size: 18px;
+	}
+	.cod-pachet
+	{
+		font-size: 25px;	
+	}
+	.pachet-1 .block, .pachet-3 .block, .pachet-5 .block
+	{
+  		width: 45%;
+  		height: 250px;
+  		margin-left: -10%;
+	}
+	.pachet-2 .block, .pachet-4 .block
+	{
+  		width: 45%;
+  		height: 250px;
+  		margin-left: 0%;
+	}
+	.pachet-3 .title
+	{
+		margin-bottom: 7%; 
+	}
+}
+/*mobile*/
+@media screen and (max-width: 500px)
+{
+	.footer-menu
+	{
+		margin-left: 20%;
+	}
+	footer
+	{
+		height: 300px;
+	}
+	.pachet-1, .pachet-3, .pachet-5, .pachet-2, .pachet-4
+	{
+  		width: 75%;
+  		height: 250px;
+  		margin-bottom: 60%;
+	}
+	.pachet-1 img, .pachet-3 img, .pachet-5 img
+	{
+  		display: initial;
+  		margin-left: auto;
+  		margin-right: auto;	
+	}
+	.pachet-2 img, .pachet-4 img
+	{
+		float: none;
+	}
+	.pachet-1 .block, .pachet-3 .block, .pachet-5 .block, .pachet-2 .block, .pachet-4 .block
+	{
+  		display: initial;
+  		margin-top: 5px;
+  		width: 80%;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+}
